@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>schönverberei – Gedichtbände von Andreas Schraag</title>
+  <meta name="description" content="Gedichtbände im Eigenverlag von Andreas Schraag. Bestellen Sie direkt beim Autor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand">schönverberei</a>
+    <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
+      <a href="#buecher">Bücher</a>
+      <a href="#gedicht">Gedicht der Woche</a>
+      <a href="#autor">Über den Autor</a>
+      <a href="#impressum">Impressum</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">schönverberei</h1>
+      <p class="hero__sub">Gedichtbände im Eigenverlag von Andreas Schraag</p>
+      <a href="#buecher" class="btn">Bücher entdecken</a>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Books ── -->
+  <section class="section books" id="buecher">
+    <div class="container">
+      <h2 class="section__heading">Erschienene Bände</h2>
+      <div class="books__grid">
+
+        <article class="book-card">
+          <div class="book-card__cover-wrap">
+            <img
+              src="assets/cover-kuerzenlange.jpg"
+              alt="Buchcover: Vom Kürzen langer Weile – Steine und Halm im Sand"
+              class="book-card__cover"
+            >
+          </div>
+          <div class="book-card__body">
+            <h3 class="book-card__title">Vom Kürzen langer Weile</h3>
+            <p class="book-card__meta">Dezember 2025 · 2.&nbsp;Auflage</p>
+            <a
+              href="mailto:schoenverberei@gmx.net?subject=Bestellung%3A%20Vom%20K%C3%BCrzen%20langer%20Weile"
+              class="btn"
+            >Bestellen via E-Mail</a>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-card__cover-wrap">
+            <img
+              src="assets/cover-duden.png"
+              alt="Buchcover: Vom Duden und von Blasen – Spuren im feinen Sand am Meer"
+              class="book-card__cover"
+            >
+          </div>
+          <div class="book-card__body">
+            <h3 class="book-card__title">Vom Duden und von Blasen</h3>
+            <p class="book-card__meta">Dezember 2026 · 1.&nbsp;Auflage</p>
+            <a
+              href="mailto:schoenverberei@gmx.net?subject=Bestellung%3A%20Vom%20Duden%20und%20von%20Blasen"
+              class="btn"
+            >Bestellen via E-Mail</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="books__note">Alle Bände sind direkt beim Autor erhältlich.</p>
+    </div>
+  </section>
+
+  <!-- ── Poem of the Week ── -->
+  <section class="section poem-section" id="gedicht">
+    <div class="container container--narrow">
+      <h2 class="section__heading">Gedicht der Woche</h2>
+      <div class="poem" id="poem-container">
+        <p class="poem__text" style="color:var(--text-muted)">Gedicht wird geladen…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Author ── -->
+  <section class="section author-section" id="autor">
+    <div class="container">
+      <div class="author">
+        <div class="author__portrait-wrap">
+          <img
+            src="assets/portrait.jpg"
+            alt="Portrait von Andreas Schraag"
+            class="author__portrait"
+            loading="lazy"
+          >
+        </div>
+        <div class="author__bio">
+          <h2 class="section__heading section__heading--left">Über den Autor</h2>
+          <p class="author__text">
+            Andreas Schraag, Jahrgang 1960, liebt Poesie und Wortspiele und schreibt schon seit seiner Jugend Gedichte.
+          </p>
+          <a href="mailto:schoenverberei@gmx.net" class="btn">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Impressum ── -->
+  <footer class="impressum" id="impressum">
+    <div class="container">
+      <h2 class="impressum__heading">Impressum</h2>
+      <address class="impressum__address">
+        Andreas Schraag<br>
+        Altstädter Str. 5<br>
+        78628 Rottweil<br>
+        <br>
+        Tel: <a href="tel:+4915772095946">+49 1577 2095946</a><br>
+        E-Mail: <a href="mailto:schoenverberei@gmx.net">schoenverberei@gmx.net</a>
+      </address>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
